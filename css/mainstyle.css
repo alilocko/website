@@ -1,0 +1,150 @@
+html {
+  margin: 0;
+  padding: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, Arial;
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+header {}
+
+
+/* MOBILE BREAKPOINT */
+
+@media screen and (max-width: 449px) {
+  
+  body {
+    background: red;
+  }
+  header {
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background: #eee;
+    text-align: center;
+  }
+  nav {
+    background: orange;
+  }
+  main {
+    margin: 0 auto;
+    background: #aaa;
+    text-align: center;
+    padding: 2px;
+    height: 1000px
+  }
+  img#logo {
+    padding: 0;
+    border: 0;
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    float: left;
+  }
+  section {
+    font-size: 1em;
+    background: #888;
+    width: 22%;
+    margin: 1em 1% 1em 1%;
+    display: inline-block;
+  }
+  section:hover {
+    background: darkgreen;
+  }
+  h1 {
+    font-size: 20px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #e00b86;
+    
+  }
+  h1#headerone {
+    padding-top: 10px;
+  }
+  h1#headertwo {
+    padding-top: 50px;
+    color: #0263ff;
+    
+  }
+  
+}
+
+
+/* TABLET/SMALL DESKTOP BREAKPOINT */
+
+/*
+@media screen and (min-width: 450px) and (max-width: 999px) {
+  body {
+    background: orange;
+  }
+  main {
+    margin: 0 auto;
+    background: #eee;
+    text-align: center;
+    padding: 2px;
+  }
+  section {
+    font-size: 1em;
+    background: #888;
+    width: 22%;
+    margin: 1em 1% 1em 1%;
+    display: inline-block;
+  }
+  section:hover {
+    background: darkgreen;
+  }
+  h1 {
+    font-size: 4em;
+    margin: 10px 0px 10px 0px;
+    padding: 1.4em;
+  }
+  h2 {
+    font-size: 2.3em;
+  }
+}
+*/
+
+
+/* DESKTOP BREAKPOINT  */
+
+/*
+@media screen and (min-width: 1000px) {
+  body {
+    width 1100px;
+    background: green;
+  }
+  main {
+    width 1100px;
+    margin: 0 auto;
+    background: #eee;
+    text-align: center;
+    padding: 2px;
+  }
+  section {
+    font-size: 1em;
+    background: #888;
+    width: 22%;
+    margin: 1em 1% 1em 1%;
+    display: inline-block;
+  }
+  section:hover {
+    background: darkgreen;
+  }
+  h1 {
+    font-size: 4em;
+    margin: 10px 0px 10px 0px;
+    padding: 1.4em;
+  }
+  h2 {
+    font-size: 2.3em;
+  }
+}
+*/
