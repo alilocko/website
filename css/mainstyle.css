@@ -1,4 +1,6 @@
-html {
+html,
+body,
+header {
   margin: 0;
   padding: 0;
   padding: 0;
@@ -6,27 +8,19 @@ html {
 
 body {
   font-family: Helvetica, Arial;
-  margin: 0;
-  padding: 0;
-  background: white;
+  background-image: url("../images/whitediamond.png");
+  background-repeat: repeat;
 }
-
-header {}
 
 
 /* MOBILE BREAKPOINT */
 
 @media screen and (max-width: 449px) {
-  
   body {
-    background: red;
+    background-size: 20px;
   }
   header {
     height: 100px;
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    background: #eee;
     text-align: center;
   }
   nav {
@@ -34,54 +28,54 @@ header {}
   }
   main {
     margin: 0 auto;
-    background: #aaa;
     text-align: center;
-    padding: 2px;
     height: 1000px
   }
   img#logo {
-    padding: 0;
+    margin: 10px;
     border: 0;
+    padding: 0;
     height: 80px;
     width: 80px;
-    margin: 10px;
     float: left;
   }
   section {
+    margin: 0;
+    border-top: 3px;
+    border-color: white;
+    padding: 0;
     font-size: 1em;
     background: #888;
-    width: 22%;
     margin: 1em 1% 1em 1%;
     display: inline-block;
+    width: 100%;
+    height: 200px;
   }
   section:hover {
     background: darkgreen;
   }
   h1 {
-    font-size: 20px;
-    float: left;
     margin: 0;
-    padding: 0;
     border: 0;
+    padding-top: 15px;
+    margin-left: 120px;
+    position: absolute;
+    font-size: 20px;
     color: #e00b86;
-    
   }
-  h1#headerone {
-    padding-top: 10px;
+  span {
+    display: absolute;
+    padding-top: 40px;
+    float: left;
+    color: #000;
   }
-  h1#headertwo {
-    padding-top: 50px;
-    color: #0263ff;
-    
-  }
-  
 }
 
 
-/* TABLET/SMALL DESKTOP BREAKPOINT */
+/* TABLET BREAKPOINT */
 
-/*
 @media screen and (min-width: 450px) and (max-width: 999px) {
+  /*
   body {
     background: orange;
   }
@@ -91,6 +85,16 @@ header {}
     text-align: center;
     padding: 2px;
   }
+*/
+  img#logo {
+    margin: 10px;
+    border: 0;
+    padding: 0;
+    height: 80px;
+    width: 80px;
+    float: left;
+  }
+  /*
   section {
     font-size: 1em;
     background: #888;
@@ -109,14 +113,14 @@ header {}
   h2 {
     font-size: 2.3em;
   }
-}
 */
+}
 
 
 /* DESKTOP BREAKPOINT  */
 
-/*
 @media screen and (min-width: 1000px) {
+  /*
   body {
     width 1100px;
     background: green;
@@ -128,6 +132,16 @@ header {}
     text-align: center;
     padding: 2px;
   }
+*/
+  img#logo {
+    margin: 10px;
+    border: 0;
+    padding: 0;
+    height: 80px;
+    width: 80px;
+    float: left;
+  }
+  /*
   section {
     font-size: 1em;
     background: #888;
@@ -146,5 +160,5 @@ header {}
   h2 {
     font-size: 2.3em;
   }
-}
 */
+}

@@ -1,13 +1,11 @@
-# website assignment - CTEC3905
+# Website - Assignment 2 - CTEC3905
 
 Assignment by Alistair Laughland.
+p14150141@my365.dmu.ac.uk.
+De Montfort University.
+
 _________________________________
-
-p14150141@my365.dmu.ac.uk 
-De Montfort University
-
-INTRODUCTION
-____________
+#INTRODUCTION
 
 This readme file will contains important information and explanation about the website I am/have developed.
 
@@ -15,8 +13,8 @@ The website is a based on a business that offers services. It will display infor
 
 The business is called Perfect Match Celebrants.
 
-DOCUMENTS & FILES
-_________________
+__________________________________
+#DOCUMENTS & FILES
 
 For the website, there are HTML5, CSS3 and JavaScript files, along with images that are used.
 
