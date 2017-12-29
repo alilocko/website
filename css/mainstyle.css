@@ -6,18 +6,24 @@ header {
   padding: 0;
   padding: 0;
 }
+
+
 /* universal styling of font and applying background images*/
+
 body {
   font-family: Helvetica, Arial;
   background-image: url("../images/whitediamond.png");
   background-repeat: repeat;
 }
 
+
 /* to push the footer to the bottom of the page*/
+
 #container {
   min-height: 100%;
   position: relative;
 }
+
 #body {
   padding-bottom: 110px;
 }
@@ -29,24 +35,37 @@ footer {
   height: 110px;
 }
 
+
 /* shows a pointer cursor when hovering over links to help with accessibility */
+
 a {
   cursor: pointer;
 }
 
 .main p {
-    color: #444;
+  color: #444;
 }
 
+
 /* NAVIGATION/MENU BAR*/
+
+nav {
+  background: #e00b86;
+}
+
+
 /* removing default ul styles for menu, pos: rel for moving content down the page when menu is expanded */
+
 nav ul {
   margin: 0;
   padding: 0;
   position: relative;
   list-style: none;
 }
+
+
 /* Styling the links */
+
 nav a {
   display: block;
   padding: 14px 20px;
@@ -54,22 +73,32 @@ nav a {
   font-size: 16px;
   text-decoration: none;
 }
+
+
 /* change backgorund color on hover */
-  nav a:hover {
-    background-color: #999;
-  }
+
+nav a:hover {
+  background-color: #999;
+}
+
 nav ul li {
   margin: 0px;
   display: inline-block;
   float: left;
   background-color: #ed2198;
 }
+
+
 /* hides the checkbox toggle*/
+
 .toggle,
 [id^=drop] {
   display: none;
 }
-/* shows nav after last item so desktop nav fills the width*/
+
+
+/* shows/extends nav bar after last item so desktop nav bar fills the width */
+
 nav:after {
   content: "";
   display: table;
@@ -89,19 +118,18 @@ section:hover {
 }
 
 p#quote {
-    font-style: italic;
+  font-style: italic;
 }
+
 
 /* when hovering over the main images within the homepage, the images will 'pop',*/
 /* using this css transformation*/
+
 .sectionimage:hover {
-        -webkit-transform: scale(1.01);
-        -ms-transform: scale(1.01);
-        transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
 }
-
-
-
 
 
 /* MOBILE BREAKPOINT */
@@ -113,9 +141,6 @@ p#quote {
   header {
     height: 100px;
     text-align: center;
-  }
-  nav {
-    background: #e00b86;
   }
   ul {
     list-style: none;
@@ -136,24 +161,22 @@ p#quote {
     text-decoration: none;
     border: none;
   }
-/*  Menu hover change color*/
+  /*  Menu hover change color*/
   .toggle:hover {
     background-color: #555;
   }
-/*  when menu is checked -> display menu items*/
+  /*  when menu is checked -> display menu items*/
   [id^=drop]:checked+ul {
     display: block;
-    
   }
-/*  set width of list items to full width*/
+  /*  set width of list items to full width*/
   nav ul li {
     width: 100%;
   }
-/*  set list item hover to change color of item*/
+  /*  set list item hover to change color of item*/
   nav a:hover {
     background-color: #999;
   }
-
   main {
     margin: 0 auto;
     text-align: center;
@@ -175,7 +198,6 @@ p#quote {
   }
   section {
     min-height: 150px;
-    
   }
   footer {
     margin: 0;
@@ -213,12 +235,11 @@ p#quote {
     background: white;
     border-color: black;
     border-width: 2px;
+    border-radius: 5px;
     font-size: 15px;
     color: #e00b86;
-    border-radius: 5px;
   }
   p {
-    color: #444;
     padding: 10px;
     width: 68%;
     margin: auto;
@@ -227,11 +248,9 @@ p#quote {
     display: inline-block;
   }
   p#quote {
-    font-style:italic;
+    font-style: italic;
   }
-  .contact p {
-  }
-  
+  .contact p {}
   a#footer {
     color: red;
   }
@@ -291,9 +310,6 @@ p#quote {
     width: 90px;
     float: left;
   }
-  nav {
-    background: #ed2198;
-  }
   section {
     min-height: 120px;
   }
@@ -310,6 +326,7 @@ p#quote {
     color: #000;
   }
   button {
+    font-weight: bold;
     margin: 10px;
     width: 140px;
     height: 35px;
@@ -328,7 +345,6 @@ p#quote {
     width: 68%;
     margin: auto;
   }
-
   .footer h1 {
     margin: 0;
     border: 0;
@@ -359,13 +375,17 @@ p#quote {
 /* TABLET BREAKPOINT */
 
 
+/* almost the same as the desktop one, just slightly different width adjustments*/
+
 @media screen and (min-width: 450px) and (max-width: 999px) {
   body {
+    /*    change widths for tablet*/
     min-width: 450px;
     max-width: 999px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    /*    change background patteren size*/
     background-size: 80px;
   }
   header {
@@ -421,7 +441,6 @@ p#quote {
     width: 68%;
     margin: auto;
   }
-
   .footer h1 {
     margin: 0;
     border: 0;
