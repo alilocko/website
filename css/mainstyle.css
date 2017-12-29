@@ -38,16 +38,14 @@ a {
     color: #444;
 }
 
+/* NAVIGATION/MENU BAR*/
 /* removing default ul styles for menu, pos: rel for moving content down the page when menu is expanded */
-
 nav ul {
   margin: 0;
   padding: 0;
   position: relative;
   list-style: none;
 }
-
-/* NAVIGATION/MENU BAR*/
 /* Styling the links */
 nav a {
   display: block;
@@ -118,7 +116,6 @@ p#quote {
   }
   nav {
     background: #e00b86;
-    /*    visibility: hidden;*/
   }
   ul {
     list-style: none;
@@ -146,6 +143,7 @@ p#quote {
 /*  when menu is checked -> display menu items*/
   [id^=drop]:checked+ul {
     display: block;
+    
   }
 /*  set width of list items to full width*/
   nav ul li {
@@ -275,7 +273,7 @@ p#quote {
 
 /* DESKTOP BREAKPOINT  */
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 1000px) {
   body {
     min-width: 1000px;
     max-width: 1000px;
@@ -320,7 +318,7 @@ p#quote {
   }
   button {
     margin: 10px;
-    width: 12%;
+    width: 140px;
     height: 35px;
     background: white;
     border-color: black;
@@ -368,56 +366,91 @@ p#quote {
 /* TABLET BREAKPOINT */
 
 
-/*
 @media screen and (min-width: 450px) and (max-width: 999px) {
   body {
-    background-size: 60px;
+    min-width: 450px;
+    max-width: 999px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: 80px;
   }
-*/
-
-
-/*
+  header {
+    height: 110px;
+  }
   main {
-    margin: 0 auto;
-    background: #eee;
+    margin: 0;
     text-align: center;
     padding: 2px;
   }
-*/
-
-
-/*
-  nav {
-    float: left;
-  }
   img#logo {
-    margin: 10px;
+    margin: 10px 30px 10px 100px;
     border: 0;
     padding: 0;
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
     float: left;
   }
-  
-*/
-
-
-/*
+  nav {
+    background: #ed2198;
+  }
   section {
-    font-size: 1em;
-    background: #888;
-    width: 22%;
-    margin: 1em 1% 1em 1%;
-    display: inline-block;
+    min-height: 120px;
   }
-  section:hover {
-    background: darkgreen;
+  h1 {
+    margin: 0;
+    border: 0;
+    padding-top: 19px;
+    display: grid;
+    font-size: 30px;
+    color: #e00b86;
   }
-  
-  h2 {
-    font-size: 2.3em;
+  span {
+    padding-top: 2px;
+    color: #000;
   }
-*/
+  button {
+    margin: 10px;
+    width: 140px;
+    height: 35px;
+    background: white;
+    border-color: black;
+    border-width: 2px;
+    font-size: 15px;
+    color: #e00b86;
+    border-radius: 5px;
+  }
+  img {
+    width: 100%;
+  }
+  p {
+    padding: 20px;
+    width: 68%;
+    margin: auto;
+  }
 
-
+  .footer h1 {
+    margin: 0;
+    border: 0;
+    padding-top: 20px;
+    text-align: center;
+    display: grid;
+    font-size: 20px;
+    color: #e00b86;
+  }
+  #h1footer1 {
+    color: white;
+  }
+  .footer a {
+    color: white;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+  }
+  footer {
+    height: 120px;
+    width: 100%;
+    display: block;
+    background: #e00b86;
+  }
 }
