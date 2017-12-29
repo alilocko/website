@@ -11,10 +11,54 @@ body {
   background-image: url("../images/whitediamond.png");
   background-repeat: repeat;
 }
-
+/* shows a pointer cursor when hovering over links to help with accessibility */
 a {
   cursor: pointer;
 }
+
+/* removing default ul styles for menu, pos: rel for moving content down the page when menu is expanded */
+nav ul {
+	margin:0;
+	padding:0;
+	position: relative;
+	list-style: none;
+}
+/* Styling the links */
+nav a {
+	display: block;
+	padding: 14px 20px;	
+	color: #ffffff;
+	font-size: 16px;
+	text-decoration: none;
+}
+nav ul li {
+	margin: 0px;
+	display: inline-block;
+	float: left;
+	background-color: #ed2198;
+	}
+/* hides the checkbox toggle*/
+.toggle,
+[id^=drop] {
+	display: none;
+}
+/* shows nav after last item so desktop nav fills the width*/
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/*
+nav ul li ul li:hover { background: #c40775; }
+*/
+
+/* Background color change on Hover */
+/*
+nav a:hover { 
+	background-color: #c40775; 
+}
+*/
 
 
 /* MOBILE BREAKPOINT */
@@ -29,16 +73,91 @@ a {
     text-align: center;
   }
   nav {
-    background: orange;
-    visibility: hidden;
+    background: #e00b86;
+/*    visibility: hidden;*/
   }
+  ul {
+    list-style: none;
+  }
+/*  hides the menu items */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+/*  styles the toggle 'Menu'*/
+  .toggle {
+		display: block;
+		background-color: #e00b86;
+		padding: 14px;
+    text-align: center;
+		color:#ffffff;
+		font-size: 16px;
+		text-decoration: none;
+		border:none;
+	}
+  .toggle:hover {
+		background-color: #555;
+	}
+  	[id^=drop]:checked + ul {
+		display: block;
+	}
+  nav ul li {
+		display: block;
+		width: 100%;
+  }
+  nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+  nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #000000;
+	}
+  nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121; 
+	}
+  nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
   main {
     margin: 0 auto;
     text-align: center;
     height: 1000px
   }
   img#logo {
-    margin: 10px;
+    margin: 10px 10px 10px 50px;
     border: 0;
     padding: 0;
     height: 80px;
@@ -78,18 +197,19 @@ a {
   h1 {
     margin: 0;
     border: 0;
-    padding-top: 15px;
-    padding-right: 40px;
+    padding-top: 25px;
+    padding-right: 70px;
     display: grid;
     font-size: 20px;
     color: #e00b86;
   }
+  span {
+    padding-top: 2px;
+    color: #000;
+  }
   h2 {
     font-size: 20px;
     letter-spacing: 2px;
-  }
-  span {
-    color: #000;
   }
   button {
     margin: 5px;
@@ -111,68 +231,126 @@ a {
 }
 
 
-/* TABLET BREAKPOINT */
 
-@media screen and (min-width: 450px) and (max-width: 999px) {
-  body {
-    background-size: 60px;
-  }
-/*
-  main {
-    margin: 0 auto;
-    background: #eee;
-    text-align: center;
-    padding: 2px;
-  }
-*/
 
-  img#logo {
-    margin: 10px;
-    border: 0;
-    padding: 0;
-    height: 80px;
-    width: 80px;
-    float: left;
-  }
-  /*
-  section {
-    font-size: 1em;
-    background: #888;
-    width: 22%;
-    margin: 1em 1% 1em 1%;
-    display: inline-block;
-  }
-  section:hover {
-    background: darkgreen;
-  }
-  h1 {
-    font-size: 4em;
-    margin: 10px 0px 10px 0px;
-    padding: 1.4em;
-  }
-  h2 {
-    font-size: 2.3em;
-  }
-*/
-}
+
+
+
+
+
+
+
+
 
 
 
 /* DESKTOP BREAKPOINT  */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 450px) {
   body {
+    min-width: 1000px;
+    max-width: 1500px;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
     background-size: 80px;
   }
+  header {
+    height: 110px;
+  }
+  main {
+    margin: 0 auto;
+    background: #eee;
+    text-align: center;
+    padding: 2px;
+  }
+  
+  img#logo {
+    margin: 10px 30px 10px 100px;
+    border: 0;
+    padding: 0;
+    height: 90px;
+    width: 90px;
+    float: left;
+  }
+  nav {
+    min-width: 1000px;
+    background: #ed2198;
+  }
+  
+  h1 {
+    margin: 0;
+    border: 0;
+    padding-top: 19px;
+    display: grid;
+    font-size: 30px;
+    color: #e00b86;
+  }
+  span {
+    padding-top: 2px;
+    color: #000;
+  }
+  
+/*
+  section {
+    font-size: 1em;
+    background: #888;
+    width: 22%;
+    margin: 1em 1% 1em 1%;
+    display: inline-block;
+  }
+  section:hover {
+    background: darkgreen;
+  }
+*/
+  
+  img {
+    width: 100%;
+  }
+/*
+  h2 {
+    font-size: 1.3em;
+  }
+*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TABLET BREAKPOINT */
+
+/*
+@media screen and (min-width: 450px) and (max-width: 999px) {
+  body {
+    background-size: 60px;
+  }
+*/
 /*
   main {
-    width 1100px;
     margin: 0 auto;
     background: #eee;
     text-align: center;
     padding: 2px;
   }
 */
+/*
+  nav {
+    float: left;
+  }
   img#logo {
     margin: 10px;
     border: 0;
@@ -181,6 +359,8 @@ a {
     width: 80px;
     float: left;
   }
+  
+*/
   /*
   section {
     font-size: 1em;
@@ -192,11 +372,7 @@ a {
   section:hover {
     background: darkgreen;
   }
-  h1 {
-    font-size: 4em;
-    margin: 10px 0px 10px 0px;
-    padding: 1.4em;
-  }
+  
   h2 {
     font-size: 2.3em;
   }

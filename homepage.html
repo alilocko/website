@@ -6,51 +6,41 @@
   <title>Perfect Match Celebrants - Home</title>
   <!-- Stylesheets linked to HTML page-->
   <link rel="stylesheet" href="css/mainstyle.css">
+  <script src="https://use.fontawesome.com/e580a7b97e.js"></script>
 </head>
 
 <body>
 
   <!--  HEADER -->
   <header>
-    <img id="logo" src="images/celebrant-logo.jpg">
+<!--    added a tag to logo so user can click logo to return to homepage -->
+    <a href="homepage.html"><img id="logo" src="images/celebrant-logo.png"></a>
     <h1 id="headerone">Perfect Match<span id="headertwo">Celebrants</span></h1>
-    <button id="navtoggle"></button>
   </header>
 
 
 
   <!--  NAVIGATION -->
-  
-  <nav class="">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Weddings</a></li>
-      <li><a href="#">Ceremonies</a></li>
-      <li><a href="#">Baby Naming</a></li>
-      <li><a href="#">Contact Us</a></li>
+
+  <nav>
+    <label for="drop" class="toggle">Menu</label>
+    <input type="checkbox" id="drop" />
+    <ul class="menu">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="homepage.html">Weddings</a></li>
+      <li><a href="homepage.html">Ceremonies</a></li>
+      <li><a href="homepage.html">Baby Naming</a></li>
+      <li><a href="homepage.html">Contact Us</a></li>
     </ul>
   </nav>
   
   
-  <!-- NAVIGATION - MOBILE OVERLAY -->
-  
-  <div class="overlay" id="overlay">
-    <div class='close'></div>
-  <nav class="menu-overlay">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Weddings</a></li>
-      <li><a href="#">Ceremonies</a></li>
-      <li><a href="#">Baby Naming</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </nav>
-  </div>
 
   <!--  MAIN -->
   <main>
     <!--    INTRO -->
     <section id="intro">
+      <!--      Image is my own - created using photoshop -->
       <img id="introimage" src="images/intro.jpg">
 
       <p>Find out about your day...</p>
