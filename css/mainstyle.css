@@ -1,9 +1,26 @@
 html,
 body,
 header {
+  height: 100%;
   margin: 0;
   padding: 0;
   padding: 0;
+}
+#container {
+  min-height: 100%;
+  position: relative;
+}
+#header {
+  
+}
+#body {
+  padding-bottom: 110px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  widows: 100%;
+  height: 110px;
 }
 
 body {
@@ -114,7 +131,7 @@ nav a:hover {
 	}
   nav a:hover,
  	nav ul ul ul a {
-		background-color: #000000;
+		background-color: #999;
 	}
   nav ul li ul li .toggle,
 	nav ul ul a,
@@ -154,7 +171,8 @@ nav a:hover {
   main {
     margin: 0 auto;
     text-align: center;
-    height: 1000px
+    display: inline-block;
+  
   }
   img#logo {
     margin: 10px 10px 10px 50px;
@@ -176,7 +194,7 @@ nav a:hover {
   section {
     margin: 1em 0 1em 0;
     padding: 0;
-    background: #eee;
+    background: #fafafa;
     display: inline-block;
     width: 100%;
     height: 260px;
@@ -184,11 +202,13 @@ nav a:hover {
   section:hover {
     background: white;
   }
+  
   footer {
     margin: 0;
     border: 0;
     padding: 0;
-    display: inline-block;
+    position: absolute;
+    bottom: 0px;
     width: 100%;
     height: 100px;
     float: left;
@@ -213,22 +233,69 @@ nav a:hover {
   }
   button {
     margin: 5px;
+/*    large enough buttons to tap on without mistake */
     width: 35%;
-    height: 35px;
-    font-size: .9em;
-/*    border-radius: X?;*/
+    height: 38px;
+    background: white;
+    border-color: black;
+    border-width: 2px;
+    font-size: 15px;
+    color: #e00b86;
+    border-radius: 5px;
   }
   p {
     padding: 10px 0 10px 0;
     
   }
+  
+  
+  .contact p {
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    color: #444;
+  }
+  
   a#footer {
     color: red;
   }
+  
+  .footer h1 {
+    margin: 0;
+    border: 0;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    font-size: 16px;
+    color: #e00b86;
+    
+  }
+  #h1footer1 {
+    color: white;
+  }
+  
+  .footer a {
+    color: white;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+  }
+  
+  footer {
+    margin-bottom: 0px;
+    height: 110px;
+    width: 100%;
+    background: #e00b86;
+  }
 }
+
+
+/*
 @media screen and (max-width:1199px) {
        #header { display:block !important; }
 }
+*/
 
 
 
@@ -259,8 +326,8 @@ nav a:hover {
     height: 110px;
   }
   main {
-    margin: 0 auto;
-    background: #eee;
+    margin: 0;
+/*    background: #eee;*/
     text-align: center;
     padding: 2px;
   }
@@ -277,7 +344,17 @@ nav a:hover {
     min-width: 1000px;
     background: #ed2198;
   }
-  
+  section {
+    margin: 1em 0 1em 0;
+    padding: 0;
+    background: #f6f6f6;
+    display: inline-block;
+    width: 100%;
+    min-height: 120px;
+  }
+  section:hover {
+    background: white;
+  }
   h1 {
     margin: 0;
     border: 0;
@@ -291,6 +368,17 @@ nav a:hover {
     color: #000;
   }
   
+  button {
+    margin: 10px;
+    width: 12%;
+    height: 35px;
+    background: white;
+    border-color: black;
+    border-width: 2px;
+    font-size: 15px;
+    color: #e00b86;
+    border-radius: 5px;
+  }
 /*
   section {
     font-size: 1em;
@@ -307,12 +395,40 @@ nav a:hover {
   img {
     width: 100%;
   }
-/*
-  h2 {
-    font-size: 1.3em;
+  
+  .contact p {
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    color: #444;
   }
-*/
-
+  .footer h1 {
+    margin: 0;
+    border: 0;
+    padding-top: 20px;
+    text-align: center;
+    display: grid;
+    font-size: 20px;
+    color: #e00b86;
+    
+  }
+  #h1footer1 {
+    color: white;
+  }
+  
+  .footer a {
+    color: white;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+  }
+  
+  footer {
+    height: 110px;
+    width: 100%;
+    display: block;
+    background: #e00b86;
+  }
 }
 
 

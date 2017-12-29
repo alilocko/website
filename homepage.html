@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!--Font Awesome by Dave Gandy - http://fontawesome.io-->
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Perfect Match Celebrants - Home</title>
@@ -10,94 +11,100 @@
 </head>
 
 <body>
-
-  <!--  HEADER -->
-  <header>
-<!--    added a tag to logo so user can click logo to return to homepage -->
-    <a href="homepage.html"><img id="logo" src="images/celebrant-logo.png"></a>
-    <h1 id="headerone">Perfect Match<span id="headertwo">Celebrants</span></h1>
-  </header>
+  <div id="container">
+    <div id="header">
 
 
 
-  <!--  NAVIGATION -->
-
-  <nav>
-    <label for="drop" class="toggle">Menu</label>
-    <input type="checkbox" id="drop" />
-    <ul class="menu">
-      <li><a href="homepage.html">Home</a></li>
-      <li><a href="homepage.html">Weddings</a></li>
-      <li><a href="homepage.html">Ceremonies</a></li>
-      <li><a href="homepage.html">Baby Naming</a></li>
-      <li><a href="homepage.html">Contact Us</a></li>
-    </ul>
-  </nav>
-  
-  
-
-  <!--  MAIN -->
-  <main>
-    <!--    INTRO -->
-    <section id="intro">
-      <!--      Image is my own - created using photoshop -->
-      <img id="introimage" src="images/intro.jpg">
-
-      <p>Find out about your day...</p>
-      <button>Ask us</button>
-
-    </section>
-
-
-    <!--    WEDDINGS -->
-    <section id="weddings">
-      <h2>Weddings</h2>
-
-    </section>
-
-
-    <!--    CEREMONIES -->
-    <section id="ceremonies">
-      <h2>Ceremonies</h2>
-
-    </section>
-
-
-    <!--    BABY NAMING -->
-    <section id="babyname">
-      <h2>Baby Naming</h2>
-
-    </section>
-
-
-    <!--   CONTACT US -->
-    <section id="contact">
-      <h2>Contact</h2>
-
-      <button>Contact Us</button>
-      <li id="demo">
-
-      </li>
-
-    </section>
-
-
-  </main>
+      <!--  HEADER -->
+      <header>
+        <!--    added a tag to logo so user can click logo to return to homepage -->
+        <a href="homepage.html"><img id="logo" src="images/celebrant-logo.png"></a>
+        <h1 id="headerone">Perfect Match<span id="headertwo">Celebrants</span></h1>
+      </header>
 
 
 
+      <!--  NAVIGATION -->
+      <nav>
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+        <ul class="menu">
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="homepage.html">Weddings</a></li>
+          <li><a href="homepage.html">Ceremonies</a></li>
+          <li><a href="homepage.html">Baby Naming</a></li>
+          <li><a href="homepage.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
 
-  <!-- FOOTER  -->
-  <footer>
-      <h2>Footer</h2>
-      
-      <p><a href="sitemap">Site Map</a></p>
+    
+
+    <div id="body">
+      <!--  MAIN -->
+      <main>
+        <!--    INTRO -->
+        <section id="intro">
+          <!--      Image is my own - created using photoshop -->
+          <img id="introimage" src="images/intro.jpg">
+
+          <p>Find out about your day...</p>
+
+          <!--      wrap the button within a form to link to suitable webpage -->
+          <form action="contact.html" method="get">
+            <button>Ask us...</button>
+          </form>
+        </section>
 
 
-  </footer>
+        <!--    WEDDINGS -->
+        <section id="weddings">
+          <h2>Weddings</h2>
+
+        </section>
 
 
+        <!--    CEREMONIES -->
+        <section id="ceremonies">
+          <h2>Ceremonies</h2>
 
+        </section>
+
+
+        <!--    BABY NAMING -->
+        <section id="babyname">
+          <h2>Baby Naming</h2>
+
+        </section>
+
+
+        <!--   CONTACT US -->
+        <section class="contact">
+          <h2>Contact</h2>
+
+          <p>For more information about our services, please feel free to contact us. We typically respond within one day. Drop us an email or message us on our social media pages below.</p>
+          <button>Contact Us</button>
+
+
+        </section>
+
+
+      </main>
+    </div>
+
+
+    
+    <div id="footer">
+      <!-- FOOTER  -->
+      <footer class="footer">
+        <h1 id="h1footer1">Perfect Match<span id="h1footer2">Celebrants</span></h1>
+
+        <p><a href="sitemap">Site Map</a></p>
+
+      </footer>
+    </div>
+  </div>
 
   <!--  JAVASCRIPT -->
   <!--
@@ -106,10 +113,5 @@
 -->
   <script src="javascript/data.js"></script>
   <script src="javascript/parse-data.js"></script>
-
-
-
-
 </body>
-
 </html>
