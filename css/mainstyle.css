@@ -94,8 +94,13 @@ p#quote {
     font-style: italic;
 }
 
-
-
+/* when hovering over the main images within the homepage, the images will 'pop',*/
+/* using this css transformation*/
+.sectionimage:hover {
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        transform: scale(1.01);
+}
 
 
 
@@ -172,6 +177,7 @@ p#quote {
   }
   section {
     min-height: 150px;
+    
   }
   footer {
     margin: 0;
