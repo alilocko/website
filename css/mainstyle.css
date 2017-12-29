@@ -6,7 +6,14 @@ header {
   padding: 0;
   padding: 0;
 }
+/* universal styling of font and applying background images*/
+body {
+  font-family: Helvetica, Arial;
+  background-image: url("../images/whitediamond.png");
+  background-repeat: repeat;
+}
 
+/* to push the footer to the bottom of the page*/
 #container {
   min-height: 100%;
   position: relative;
@@ -18,23 +25,18 @@ header {
 footer {
   position: absolute;
   bottom: 0;
-  widows: 100%;
+  width: 100%;
   height: 110px;
 }
 
-body {
-  font-family: Helvetica, Arial;
-  background-image: url("../images/whitediamond.png");
-  background-repeat: repeat;
-}
-
-
 /* shows a pointer cursor when hovering over links to help with accessibility */
-
 a {
   cursor: pointer;
 }
 
+.main p {
+    color: #444;
+}
 
 /* removing default ul styles for menu, pos: rel for moving content down the page when menu is expanded */
 
@@ -45,9 +47,8 @@ nav ul {
   list-style: none;
 }
 
-
+/* NAVIGATION/MENU BAR*/
 /* Styling the links */
-
 nav a {
   display: block;
   padding: 14px 20px;
@@ -55,45 +56,27 @@ nav a {
   font-size: 16px;
   text-decoration: none;
 }
-
+/* change backgorund color on hover */
+  nav a:hover {
+    background-color: #999;
+  }
 nav ul li {
   margin: 0px;
   display: inline-block;
   float: left;
   background-color: #ed2198;
 }
-
-
 /* hides the checkbox toggle*/
-
 .toggle,
 [id^=drop] {
   display: none;
 }
-
-
 /* shows nav after last item so desktop nav fills the width*/
-
 nav:after {
   content: "";
   display: table;
   clear: both;
 }
-
-
-/*
-nav ul li ul li:hover { background: #c40775; }
-*/
-
-
-/* Background color change on Hover */
-
-
-/*
-nav a:hover { 
-	background-color: #c40775; 
-}
-*/
 
 section {
   margin: 1em 0 1em 0;
@@ -106,6 +89,16 @@ section {
 section:hover {
   background: white;
 }
+
+p#quote {
+    font-style: italic;
+}
+
+
+
+
+
+
 
 
 /* MOBILE BREAKPOINT */
@@ -171,14 +164,15 @@ section:hover {
     width: 80px;
     float: left;
   }
-  img#introimage {
+  img.sectionimage {
     margin: 0;
     border: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
+/*    height: 100%;*/
     float: left;
-    position: relative;
+    position: inherit;
+    display: block;
   }
   section {
     min-height: 150px;
@@ -223,15 +217,20 @@ section:hover {
     color: #e00b86;
     border-radius: 5px;
   }
+  p {
+    color: #444;
+  }
   .intro p {
     display: inline-block;
     padding: 5px;
+  }
+  .babyname p {
+    font-style:italic;
   }
   .contact p {
     padding: 20px;
     width: 60%;
     margin: auto;
-    color: #444;
   }
   
   a#footer {
@@ -331,12 +330,12 @@ section:hover {
   img {
     width: 100%;
   }
-  .contact p {
+  p {
     padding: 20px;
-    width: 60%;
+    width: 68%;
     margin: auto;
-    color: #444;
   }
+
   .footer h1 {
     margin: 0;
     border: 0;
