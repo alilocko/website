@@ -264,13 +264,6 @@ p#quote {
 }
 
 
-/*
-@media screen and (max-width:1199px) {
-       #header { display:block !important; }
-}
-*/
-
-
 /* DESKTOP BREAKPOINT  */
 
 @media screen and (min-width: 1000px) {
