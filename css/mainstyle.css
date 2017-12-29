@@ -12,6 +12,10 @@ body {
   background-repeat: repeat;
 }
 
+a {
+  cursor: pointer;
+}
+
 
 /* MOBILE BREAKPOINT */
 
@@ -19,12 +23,14 @@ body {
   body {
     background-size: 20px;
   }
+  
   header {
     height: 100px;
     text-align: center;
   }
   nav {
     background: orange;
+    visibility: hidden;
   }
   main {
     margin: 0 auto;
@@ -39,46 +45,79 @@ body {
     width: 80px;
     float: left;
   }
-  section {
+  img#introimage {
     margin: 0;
-    border-top: 3px;
-    border-color: white;
+    border: 0;
     padding: 0;
-    font-size: 1em;
-    background: #888;
-    margin: 1em 1% 1em 1%;
+    width: 100%;
+    float: left;
+    position: inherit;
+    display: block;
+  }
+  section {
+    margin: 1em 0 1em 0;
+    padding: 0;
+    background: #eee;
     display: inline-block;
     width: 100%;
-    height: 200px;
+    height: 260px;
   }
   section:hover {
-    background: darkgreen;
+    background: white;
+  }
+  footer {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    float: left;
+    background: #aaa;
   }
   h1 {
     margin: 0;
     border: 0;
     padding-top: 15px;
-    margin-left: 120px;
-    position: absolute;
+    padding-right: 40px;
+    display: grid;
     font-size: 20px;
     color: #e00b86;
   }
+  h2 {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
   span {
-    display: absolute;
-    padding-top: 40px;
-    float: left;
     color: #000;
   }
+  button {
+    margin: 5px;
+    width: 35%;
+    height: 35px;
+    font-size: .9em;
+/*    border-radius: X?;*/
+  }
+  p {
+    padding: 10px 0 10px 0;
+    
+  }
+  a#footer {
+    color: red;
+  }
+}
+@media screen and (max-width:1199px) {
+       #header { display:block !important; }
 }
 
 
 /* TABLET BREAKPOINT */
 
 @media screen and (min-width: 450px) and (max-width: 999px) {
-  /*
   body {
-    background: orange;
+    background-size: 60px;
   }
+/*
   main {
     margin: 0 auto;
     background: #eee;
@@ -86,6 +125,7 @@ body {
     padding: 2px;
   }
 */
+
   img#logo {
     margin: 10px;
     border: 0;
@@ -117,14 +157,14 @@ body {
 }
 
 
+
 /* DESKTOP BREAKPOINT  */
 
 @media screen and (min-width: 1000px) {
-  /*
   body {
-    width 1100px;
-    background: green;
+    background-size: 80px;
   }
+/*
   main {
     width 1100px;
     margin: 0 auto;
