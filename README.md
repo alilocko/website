@@ -4,6 +4,17 @@ Assignment by Alistair Laughland.
 p14150141@my365.dmu.ac.uk.
 De Montfort University.
 
+Repository
+https://github.com/alilocko/website
+
+HTML Webpage links
+https://alilocko.github.io/website/
+https://alilocko.github.io/website/homepage.html
+https://alilocko.github.io/website/sitemap.html
+
+CSS File
+https://alilocko.github.io/website/css/mainstyle.css
+
 _________________________________
 #INTRODUCTION
 
