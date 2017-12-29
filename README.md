@@ -9,7 +9,7 @@ https://github.com/alilocko/website
 
 HTML Webpage links
 https://alilocko.github.io/website/
-https://alilocko.github.io/website/homepage.html
+https://alilocko.github.io/website/index.html
 https://alilocko.github.io/website/sitemap.html
 
 CSS File

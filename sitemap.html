@@ -11,48 +11,55 @@
 </head>
 
 <body>
-<!--  a container div used to push the footer to the bottom of the page - otherwise moves up -->
+  <!--  a container div used to push the footer to the bottom of the page - otherwise moves up -->
   <div id="container">
-    
-      <!--  HEADER -->
-      <header>
-        <!--    added a tag to logo so user can click logo to return to homepage -->
-        <a href="homepage.html"><img id="logo" src="images/celebrant-logo.png"></a>
-        <!--    span used to style 'Celebrants'    -->
-        <h1 id="headerone">Perfect Match<span id="headertwo">Celebrants</span></h1>
-      </header>
 
-      <!--  NAVIGATION -->
-      <nav>
-        <!--  a label for mobile menu when it is not displaying menu        -->
-        <label for="drop" class="toggle">Menu</label>
-        <!--  checkbox to allow menu to dropdown -->
-        <input type="checkbox" id="drop" />
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html">Weddings</a></li>
-          <li><a href="index.html">Ceremonies</a></li>
-          <li><a href="index.html">Baby Naming</a></li>
-          <li><a href="index.html">Contact Us</a></li>
-        </ul>
-      </nav>
+    <!--  HEADER -->
+    <header>
+      <!--    added a tag to logo so user can click logo to return to homepage -->
+      <a href="homepage.html"><img id="logo" src="images/celebrant-logo.png" alt="Perfect Match Logo"></a>
 
-    
+      <!--    span used to style 'Celebrants'    -->
+      <h1 id="headerone">Perfect Match<span id="headertwo">Celebrants</span></h1>
+    </header>
+
+    <!--  NAVIGATION -->
+    <nav>
+      <!--  a label for mobile menu when it is not displaying menu        -->
+      <label for="drop" class="toggle">Menu</label>
+      <!--  checkbox to allow menu to dropdown -->
+      <input type="checkbox" id="drop" />
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Weddings</a></li>
+        <li><a href="index.html">Ceremonies</a></li>
+        <li><a href="index.html">Baby Naming</a></li>
+        <li><a href="index.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+
 
     <div id="body">
       <!--  MAIN -->
       <main>
         <!--    SITEMAP -->
         <section class="sitemap">
-          <img id="introimage" src="images/intro.jpg">
-
-          <a href="homepage.html"><p>Homepage</p></a>
-          <a href="sitemap.html"><p>Sitemap</p></a>
+          <h2>Choose your ceremony! </h2>
+          
+          <!--      Image is my own - created using photoshop -->
+          <img class="sectionimage" src="images/intro.jpg" alt="Perfect Match, your choice, your voice, your ceremony">
+          <a href="index.html">
+            <p>Homepage</p>
+          </a>
+          <a href="sitemap.html">
+            <p>Sitemap</p>
+          </a>
 
         </section>
-      </main> 
+      </main>
     </div>
-    
+
     <div id="footer">
       <!-- FOOTER  -->
       <footer class="footer">
@@ -72,4 +79,5 @@
   <script src="javascript/data.js"></script>
   <script src="javascript/parse-data.js"></script>
 </body>
+
 </html>
